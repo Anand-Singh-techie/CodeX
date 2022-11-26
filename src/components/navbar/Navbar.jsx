@@ -18,7 +18,7 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
-        <Router>
+        
         <div>
         <div className="bit_navbar">
             <div className="bit_navbar-links">
@@ -75,10 +75,8 @@ const Navbar = () => {
                     )}
             </div>
         </div>
-      
-
         </div>
-        </Router>
+        
     )
 }
 

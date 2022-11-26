@@ -2,8 +2,7 @@ import './App.css';
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -16,11 +15,11 @@ function App() {
     <div className="App">
       <div className="gradient__bg">
       <Router>  
-        <Switch>
-          <Route exact path="/" ><Home /></Route>
-          <Route exact path="/signup"><Login /></Route>
-          <Route exact path="/admin"><Login/></Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/signup" element={<Login/>}/>
+          <Route exact path="/admin" element={<Login/>}/>
+        </Routes>
       </Router>
       </div>
     </div>
